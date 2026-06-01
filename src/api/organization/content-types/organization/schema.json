@@ -1,0 +1,71 @@
+{
+  "kind": "collectionType",
+  "collectionName": "organizations",
+  "info": {
+    "singularName": "organization",
+    "pluralName": "organizations",
+    "displayName": "organization"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "organization": {
+      "type": "string",
+      "required": true
+    },
+    "street": {
+      "type": "string",
+      "required": true
+    },
+    "street2": {
+      "type": "string"
+    },
+    "country_id": {
+      "type": "integer"
+    },
+    "city": {
+      "type": "string"
+    },
+    "zip_code": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "mobile": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "organization"
+    },
+    "website": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string"
+    },
+    "reference_company": {
+      "type": "string"
+    },
+    "time_zone": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "url_api": {
+      "type": "string"
+    }
+  }
+}
